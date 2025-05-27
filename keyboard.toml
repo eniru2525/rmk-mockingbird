@@ -49,7 +49,7 @@ keymap = [
     ]
 ]
 
-[[input_device.encoder]]
+[input_device.encoder]
 pin_a = "P0_28"
 pin_b = "P1_11"
 
