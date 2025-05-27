@@ -1,99 +1,99 @@
-    [keyboard]
-    name = "mockingbird"
-    product_name = "mockingbird"
-    vendor_id = 0x0721
-    product_id = 0x0233
-    manufacturer = "rmk"
-    chip = "nrf52840"
+[keyboard]
+name = "mockingbird"
+product_name = "mockingbird"
+vendor_id = 0x0721
+product_id = 0x0233
+manufacturer = "rmk"
+chip = "nrf52840"
 
-    [matrix]
-    # Input and output pins are mandatory
-    input_pins = ["P0_15", "P0_17", "P0_13", "P0_30", "P0_29", "P0_31", "P0_02", "P1_06"]
-    output_pins = ["P0_06", "P0_20", "P0_09", "P0_03", "P1_13", "P0_10", "P0_24", "P0_08"]
-    # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-    # row2col = true
+[matrix]
+# Input and output pins are mandatory
+input_pins = ["P0_15", "P0_17", "P0_13", "P0_30", "P0_29", "P0_31", "P0_02", "P1_06"]
+output_pins = ["P0_06", "P0_20", "P0_09", "P0_03", "P1_13", "P0_10", "P0_24", "P0_08"]
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
+# row2col = true
 
 
-    [layout]
-    rows = 8
-    cols = 8
-    layers = 4
-    keymap = [
-        [
-            ["Escape", "Kc", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "LeftBracket"],
-            ["Tab", "Q", "W", "E", "R", "T", "T", "Y", "U", "I", "O", "P", "RightBracket"],
-            ["LCtrl", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote"],
-            ["LShift", "Z", "X", "C", "V", "B", "T", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-            ["LGui", "LAlt", "Space", "LT(2, Delete)", "Space", "Space"]
-        ],
-        [
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_"]
-        ],
-        [
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_"]
-        ],
-        [
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-            ["_", "_", "_", "_", "_", "_"]
-        ]
+[layout]
+rows = 8
+cols = 8
+layers = 4
+keymap = [
+    [
+        ["Escape", "Kc", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "LeftBracket"],
+        ["Tab", "Q", "W", "E", "R", "T", "T", "Y", "U", "I", "O", "P", "RightBracket"],
+        ["LCtrl", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote"],
+        ["LShift", "Z", "X", "C", "V", "B", "T", "N", "M", "Comma", "Dot", "Slash", "RShift"],
+        ["LGui", "LAlt", "Space", "LT(2, Delete)", "Space", "Space"]
+    ],
+    [
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_"]
+    ],
+    [
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_"]
+    ],
+    [
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_"]
     ]
+]
 
-    [[input_device.encoder]]
-    pin_a = "P0_28"
-    pin_b = "P1_11"
+[[input_device.encoder]]
+pin_a = "P0_28"
+pin_b = "P1_11"
 
-    # Whether to use the MCU's internal pull-up resistor, default to false
-    internal_pullup = false
+# Whether to use the MCU's internal pull-up resistor, default to false
+internal_pullup = false
 
-    # Phase is the working mode of the rotary encoders.
-    # Available mode: 
-    # - default: EC11 compatible, resolution = 1
-    # - e8h7: resolution = 2, reverse = true
-    # - resolution: customized resolution, the resolution value and reverse should be specified later
-    phase = "default" 
+# Phase is the working mode of the rotary encoders.
+# Available mode: 
+# - default: EC11 compatible, resolution = 1
+# - e8h7: resolution = 2, reverse = true
+# - resolution: customized resolution, the resolution value and reverse should be specified later
+phase = "default" 
 
-    # The resolution represents how many pulses the encoder generates per detent.
-    # For examples, if your rotary encoder has 30 detents in total and generates 15 pulses per 360 degree rotation, then the resolution = 30/15 = 2.
-    # Number of detents and number of pulses can be found in your encoder's datasheet
-    resolution = 2
+# The resolution represents how many pulses the encoder generates per detent.
+# For examples, if your rotary encoder has 30 detents in total and generates 15 pulses per 360 degree rotation, then the resolution = 30/15 = 2.
+# Number of detents and number of pulses can be found in your encoder's datasheet
+resolution = 2
 
-    # Whether the direction of the rotary encoder is reversed.
-    reverse = false
+# Whether the direction of the rotary encoder is reversed.
+reverse = false
 
-    [light]
-    # All light pins are high-active by default, uncomment if you want it to be low-active
-    #capslock.pin = "P0_30"
-    #capslock.low_active = false
-    # scrolllock.pin = "PA3"
-    # scrolllock.low_active = true
-    # Just ignore if no light pin is used for it
-    # numslock.pin = "PA5"
-    # numslock.low_active = true
+[light]
+# All light pins are high-active by default, uncomment if you want it to be low-active
+#capslock.pin = "P0_30"
+#capslock.low_active = false
+# scrolllock.pin = "PA3"
+# scrolllock.low_active = true
+# Just ignore if no light pin is used for it
+# numslock.pin = "PA5"
+# numslock.low_active = true
 
-    [storage]
-    # Storage feature is enabled by default
-    # enabled = false
+[storage]
+# Storage feature is enabled by default
+# enabled = false
 
-    [ble]
-    enabled = true
-    # vddh has an internal voltage divider
-    battery_adc_pin = "vddh"
-    # Or
-    # battery_adc_pin = "P0_04"
-    # adc_divider_measured = 2000
-    # adc_divider_total = 2806
-    #charge_state.pin = "P0_25"
-    #charge_state.low_active = false
-    #charge_led.pin = "P0_29"
-    #charge_led.low_active = false
+[ble]
+enabled = true
+# vddh has an internal voltage divider
+battery_adc_pin = "vddh"
+# Or
+# battery_adc_pin = "P0_04"
+# adc_divider_measured = 2000
+# adc_divider_total = 2806
+#charge_state.pin = "P0_25"
+#charge_state.low_active = false
+#charge_led.pin = "P0_29"
+#charge_led.low_active = false
