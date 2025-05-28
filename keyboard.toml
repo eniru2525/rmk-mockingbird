@@ -20,14 +20,14 @@ cols = 8
 layers = 4
 keymap = [
     [
-        ["Escape", "Tab", "LCtrl", "LShift", "Z", "A", "Q", "Kc1"],
-        ["Kc2", "W", "S", "X", "C", "D", "E", "Kc3"],
-        ["Kc4", "R", "F", "V", "B", "G", "T", "Kc5"],
-        ["Kc6", "Y", "H", "N", "M", "J", "U", "Kc7"],
-        ["Kc8", "I", "K", "Comma", "Dot", "L", "O", "Kc9"],
-        ["Kc0", "P", "Semicolon", "Slash", "RShift", "Quote", "RightBracket", "LeftBracket"],
-        ["LGui", "LAlt", "Space", "Space", "LT(2, Space)", "LT(2, Delete)", "Space", "Space"],
-        ["_", "T", "_", "B", "_", "_", "_", "_"]
+        ["Escape", "Kc2", "Kc4", "Kc6", "Kc8", "Kc0", "LGui", "_"],
+        ["Tab", "W", "R", "Y", "I", "P", "LAlt", "T"],
+        ["LCtrl", "S", "F", "H", "K", "Semicolon", "Space",  "_"],
+        ["LShift", "X", "V", "N", "Comma", "Slash", "Space", "B"],
+        ["Z", "C", "B", "M", "Dot", "RShift", "LT(2, Space)", "_"],
+        ["A", "D", "G", "J", "L", "Quote", "LT(2, Delete)", "_"],
+        ["Q", "E", "T", "U", "O", "RightBracket", "Space", "_"],
+        ["Kc1", "Kc3", "Kc5", "Kc7", "Kc9", "LeftBracket", "Space", "_"]
     ],
     [
         ["_", "_", "_", "_", "_", "_", "_", "_"],
