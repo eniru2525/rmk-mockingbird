@@ -26,7 +26,7 @@ keymap = [
         ["Kc6", "Y", "H", "N", "M", "J", "U", "Kc7"],
         ["Kc8", "I", "K", "Comma", "Dot", "L", "O", "Kc9"],
         ["Kc0", "P", "Semicolon", "Slash", "RShift", "Quote", "RightBracket", "LeftBracket"],
-        ["LGui", "LAlt", "Space", "Space", "LT(2, BackSpace)", "LT(2, Delete)", "Space", "Space"],
+        ["LGui", "LAlt", "Space", "Space", "LT(2, Space)", "LT(2, Delete)", "Space", "Space"],
         ["_", "T", "_", "B", "_", "_", "_", "_"]
     ],
     [
